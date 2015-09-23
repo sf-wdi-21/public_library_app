@@ -26,6 +26,8 @@ Rails.application.routes.draw do
 
     get "/books", to: "books#index"
 
+    get "/books/:id", to: "books#show"
+
 end
 
 #   Prefix Verb URI Pattern          Controller#Action

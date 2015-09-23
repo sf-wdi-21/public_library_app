@@ -3,3 +3,9 @@
   <%= @book.author %></strong>, <%= @book.year %>
 </p>
 
+<h4>Available from:</h4>
+<ul>
+  <% @book.libraries.each do |library| %>
+    <li><%= library.name %></li>
+  <% end %>
+</ul>

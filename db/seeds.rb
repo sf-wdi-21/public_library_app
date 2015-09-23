@@ -22,12 +22,18 @@ sfpl = Library.create(
 
 sfpl.users << user
 
-Book.create(
+book = Book.create(
   title: "As I Lay Dying",
   author: "Faulkner",
   year: 1930,
   publisher: "Modern Library"
 )
 
-p "Finished seeding..."
-p "Created #{Library.count} libraries, #{User.count} users, #{LibraryUser.count} library patrons, #{Book.count} books"
+sfpl.books << book
+
+p "Finished seeding. Created..."
+p "#{Library.count} libraries"
+p "#{User.count} users"
+p "#{LibraryUser.count} library patrons"
+p "#{Book.count} books"
+p "#{LibraryBook.count} library book records"

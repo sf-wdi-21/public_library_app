@@ -22,5 +22,12 @@ sfpl = Library.create(
 
 sfpl.users << user
 
+Book.create(
+  title: "As I Lay Dying",
+  author: "Faulkner",
+  year: 1930,
+  publisher: "Modern Library"
+)
+
 p "Finished seeding..."
 p "Created #{Library.count} libraries, #{User.count} users, #{LibraryUser.count} library patrons"

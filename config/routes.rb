@@ -24,6 +24,8 @@ Rails.application.routes.draw do
 
     post "/libraries/:library_id/users", to: "library_users#create", as: "library_users"
 
+    get "/books", to: "books#index"
+
 end
 
 #   Prefix Verb URI Pattern          Controller#Action

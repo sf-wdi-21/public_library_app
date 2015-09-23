@@ -30,4 +30,4 @@ Book.create(
 )
 
 p "Finished seeding..."
-p "Created #{Library.count} libraries, #{User.count} users, #{LibraryUser.count} library patrons"
+p "Created #{Library.count} libraries, #{User.count} users, #{LibraryUser.count} library patrons, #{Book.count} books"
